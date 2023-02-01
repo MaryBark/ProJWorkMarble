@@ -66,10 +66,9 @@ endif()
 
 # настраиваем includes
 include_directories("${Marble_INCLUDE_DIR}")  # заголовочные файлы marble-библиотеки
-# создаём приложение
-add_executable(my_application main.cpp)
+
 # подключаем к приложению библиотеку marble
-target_link_libraries(my_application ${Marble_LIBRARIES})
+target_link_libraries(ForMarbleQtWidgets ${Marble_LIBRARIES})
 
 
 
